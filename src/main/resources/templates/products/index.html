@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tai</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>Hi there</h1>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Price</th>
+    </tr>
+
+    <tr th:each="obj : ${Products}">
+        <td th:text="${obj.Id}">Onions</td>
+        <td th:text="${obj.Name}">Onions</td>
+        <td th:text="${obj.Brand}">Onions</td>
+        <td th:text="${obj.Price}">Onions</td>
+    </tr>
+</table>
+</body>
+</html>
